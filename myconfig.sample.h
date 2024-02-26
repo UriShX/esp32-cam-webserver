@@ -3,7 +3,8 @@
  *
  *  The local config is in the '.gitignore' file, which helps to keep details secret.
  */
-
+#ifndef MYCONFIG_H
+#define MYCONFIG_H
 
 /* Give the camera a name for the web interface */
 #define CAM_NAME "ESP32 camera server"
@@ -195,3 +196,4 @@ struct station stationList[] = {{"ssid1", "pass1", true},
 // For clone modules that have camera module and SPIFFS startup issues try setting
 // this very low (start at 2MHZ and increase):
 // #define XCLK_FREQ_MHZ 2
+#endif
